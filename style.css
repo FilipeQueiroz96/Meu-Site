@@ -70,12 +70,16 @@ li{
 
 
 
+
+
+
+
 .sessao-banner{
     background-image: url(assets/banner.png);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 920px;
+    height: 100vh;
 }
 .texto-inicial{
     padding: 300px 7% 0 7%;
@@ -110,13 +114,16 @@ li{
     transform: scale(1.06);
 }
 .box-seta{
+    transform:translate(-50%, -50%);
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 180px;
     transition: 1s;
     animation: quicar 2s infinite;
+    top: 87vh;
+    left: 50%;
 }
 .mouse{
     color: white;
@@ -178,9 +185,7 @@ img{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    gap: 30px;
-    padding: 80px 12% 50px 12%;
-    
+    padding: 80px 15% 50px 15%;
 }
 
 
@@ -188,6 +193,7 @@ img{
     max-width: 300px;
     border: 2px solid rgb(228, 228, 228);
     padding: 20px;
+    margin-bottom: 40px;
 }
 .box-servicos>li>p{
     text-align: center;
