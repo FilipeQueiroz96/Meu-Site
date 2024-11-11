@@ -507,7 +507,14 @@ h4{
 }
 
 @media (max-width: 650px){
-    
+    .menu-flex{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 3% 0 3%;
+        font-size: 18px;
+    }
+
     body{
         background-image: none;
         background-color: white;
@@ -597,6 +604,15 @@ h4{
     }
     .box-seta{
         display: none;
+    }
+
+
+
+    .textosobre{
+        text-align: center;
+        font-size: 18px;
+        max-width: 600px;
+        padding: 0 4%;
     }
 
 
