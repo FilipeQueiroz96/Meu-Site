@@ -500,7 +500,7 @@ h4{
 }
 
         
-@media (max-width: 1350px) {
+@media (max-width: 1450px) {
     h1{
         padding-top: 150px;
     }
@@ -602,7 +602,10 @@ h4{
         
     }
 
-.box-seta{
+    .box-seta{
+        top: 92vh;
+    }
+    .mouse{
         display: none;
     }
 
