@@ -502,18 +502,18 @@ h4{
         
 @media (max-width: 1350px) {
     h1{
-        padding-top: 170px;
+        padding-top: 150px;
     }
     .texto-inicial{
-            padding: 80px 8% 0 8%;
-            font-size: 30px;
+            padding: 60px 8% 0 8%;
+            font-size: 29px;
         }
         
         .box-falecomigo{
-            margin-top: 90px;
+            display: none;
         }
         .box-seta{
-            top: 87vh;
+            top: 83vh;
         }
         .mouse{
             width: 52px;
@@ -523,6 +523,7 @@ h4{
             width: 30px;
             height: 30px;
         }
+        
 
     .box-servicos{
         display: grid;
