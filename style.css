@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +15,7 @@ body{
 }
 header.scrollmenu{
     background-color: rgb(255, 255, 255);
-    padding: 8px 0 8px 0;
+    padding: 1px 0 1px 0;
 }
 header.scrollmenu>nav>ul>li>a{
     color: rgb(0, 0, 0);
@@ -35,6 +37,7 @@ header{
     padding: 35px 0 25px 0;
     transition: .5s;
 }
+
 .menu-flex{
     display: flex;
     justify-content: space-around;
@@ -42,13 +45,11 @@ header{
     padding: 0 8% 0 8%;
     font-size: 18px;
 }
-i{
-    background-color: rgb(248, 129, 32);
-    padding: 10px;
-    border-radius: 50%;
-    color: rgb(255, 255, 255);
-    font-weight: 600;
+.menu-flex>img{
+    width: 60px;
+    cursor: default;
 }
+
 .menu-itens{
     display: flex;
     gap: 40px;
@@ -71,9 +72,11 @@ li{
     padding: 6px;
     color: rgb(248, 129, 32);
     font-weight: 600;
+    transition: 0.4s;
 }
-
-
+.botao-contato:hover{
+    transform: scale(1.07);
+}
 
 
 
@@ -86,12 +89,34 @@ li{
     background-attachment: fixed;
     height: 100vh;
 }
-.texto-inicial{
-    padding: 300px 7% 0 7%;
-    font-size: 38px;
-    color: white;
+.h-flex{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    padding-top: 230px;
+    color: rgb(255, 255, 255);
     text-align: center;
     max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+h1>span{
+    color: white;
+    font-size: 21px;
+    font-weight: 200;
+    font-family: "Poppins";
+}
+
+.texto-inicial{
+    padding: 150px 10% 0 10%;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -173,6 +198,7 @@ li{
     padding: 120px 4% 80px 4%;
     justify-content: center;
     flex-wrap: wrap-reverse;
+    align-items: center;
     gap: 50px;
 }
 img{
@@ -183,6 +209,7 @@ img{
     text-align: center;
     font-size: 20px;
     max-width: 600px;
+    
 }
 .nome{
     font-weight:500;
@@ -409,13 +436,13 @@ h4{
 .botao-menu{
     position: fixed;
     top: 5px;
-    right: 2px;
+    right: 5px;
     display: none;
 }
 .botao-menu>svg{
     color: white;
-    height: 30px;
-    width: 30px;
+    height: 32px;
+    width: 32px;
 }
 #botaomenu.scrollmenumobile>svg{
     color: black;
@@ -473,20 +500,20 @@ h4{
 }
 
         
-
-
-
-@media (max-width: 1210px) {
+@media (max-width: 1350px) {
+    h1{
+        padding-top: 170px;
+    }
     .texto-inicial{
-            padding: 230px 7% 0 7%;
-            font-size: 32px;
+            padding: 80px 8% 0 8%;
+            font-size: 30px;
         }
         
         .box-falecomigo{
-            margin-top: 100px;
+            margin-top: 90px;
         }
         .box-seta{
-            top: 85vh;
+            top: 87vh;
         }
         .mouse{
             width: 52px;
@@ -506,13 +533,76 @@ h4{
     }
 }
 
-@media (max-width: 650px){
+
+
+
+
+
+
+
+
+@media (max-width: 700px){
+    
+
+    .botao-menu{
+        display: block;
+    }
     .menu-flex{
+        display: none;
+    }
+
+
+    .h-flex{
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 0 3% 0 3%;
+        justify-content: center;
+    }
+    h1{
+        padding-top: 50px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        font-size: 34px;
+        font-weight: 500;
+    }
+    
+    h1>span{
+        color: white;
         font-size: 18px;
+        font-weight: 300;
+    }
+    
+    .texto-inicial{
+        padding: 110px 10% 0 10%;
+        font-size: 24px;
+        color: white;
+        text-align: center;
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    .box-falecomigo{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    
+    .falecomigo{
+        color: white;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 23px;
+        padding: 10px;
+        border-radius: 22px;
+        background-color: rgb(248, 129, 32);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.596);
+        transition: .5s;
+        
+    }
+
+.box-seta{
+        display: none;
     }
 
     body{
@@ -586,15 +676,60 @@ h4{
      }
 }
 
+
+
 @media (max-width: 500px){
     header{
         display: none;
     }
-    .texto-inicial{
-        padding: 120px 7% 20px 7%;
-        font-size: 30px;
+    .h-flex{
+        display: flex;
+        justify-content: center;
+    }
+    h1{
+        padding-top: 50px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 34px;
+        font-weight: 500;
     }
     
+    h1>span{
+        color: white;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    
+    .texto-inicial{
+        padding: 110px 10% 0 10%;
+        font-size: 24px;
+        color: white;
+        text-align: center;
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    .box-falecomigo{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    
+    .falecomigo{
+        color: white;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 23px;
+        padding: 10px;
+        border-radius: 22px;
+        background-color: rgb(248, 129, 32);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.596);
+        transition: .5s;
+        
+    }
+
     .sessao-banner{
         background-image: url(imagens/banner.png);
         background-position: center;
@@ -602,9 +737,7 @@ h4{
         background-attachment: fixed;
         height: 100vh;
     }
-    .box-seta{
-        display: none;
-    }
+    
 
 
 
