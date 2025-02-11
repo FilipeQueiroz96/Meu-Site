@@ -3,11 +3,12 @@ window.addEventListener("scroll", function(){
     var menuheader = document.getElementById('header')
     var mouse = document.getElementById('mouse')
     var menumobile = document.getElementById('botaomenu')
-    
+    var logo = document.getElementById('logo')
 
     menuheader.classList.toggle('scrollmenu',window.scrollY > 180)
     mouse.classList.toggle('scrollmouse', window.scrollY > 300)
     menumobile.classList.toggle('scrollmenumobile', window.scrollY > 700)
+    logo.classList.toggle('scrolllogo',window.scrollY > 180)
 })
 
 
